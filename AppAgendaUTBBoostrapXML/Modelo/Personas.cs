@@ -10,7 +10,10 @@ namespace AppAgendaUTBBoostrapXML.Modelo
         #region propiedades
 
         private int id;
-        private string email;
+        public string nombre;
+        public string apellidos;
+        public string emailp;
+        private string emailw;
         private int telefono;
 
         
@@ -23,10 +26,10 @@ namespace AppAgendaUTBBoostrapXML.Modelo
             get { return id; }
             set { id = value; }
         }
-        public string Email
+        public string Emailw
         {
-            get { return email; }
-            set { email = value; }
+            get { return emailw; }
+            set { emailw = value; }
         }
         public int Telefono
         {
@@ -40,7 +43,7 @@ namespace AppAgendaUTBBoostrapXML.Modelo
         public Personas () {
 
             this.id = 123;
-            this.email = "xxxxx@hotmail.com";
+            this.emailw = "xxxxx@hotmail.com";
             this.telefono = 1234;
 
         
@@ -48,7 +51,7 @@ namespace AppAgendaUTBBoostrapXML.Modelo
         public Personas(int id,string email ,int telefono) {
 
             this.id = id;
-            this.email = email;
+            this.emailw = email;
             this.telefono = telefono;
 
         }
@@ -59,7 +62,7 @@ namespace AppAgendaUTBBoostrapXML.Modelo
         {
             return "\n________________________________________________ \n" +
                 "\n ID = " + id + "\n" +
-                "\n email = " + email + "\n" +
+                "\n email = " + emailw + "\n" +
                 "\n Telefono = " + telefono + "\n" ;
 
         }
@@ -69,7 +72,7 @@ namespace AppAgendaUTBBoostrapXML.Modelo
             Personas c = (Personas)obj;
             bool result = false;
 
-            if ((this.id == c.id) && (this.email == c.email) &&  (this.telefono == c.telefono))
+            if ((this.id == c.id) && (this.emailw == c.emailw) &&  (this.telefono == c.telefono))
             {
                 result = true;
             }

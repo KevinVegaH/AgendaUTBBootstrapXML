@@ -14,6 +14,9 @@
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    
+
+   
 </head>
 <body>
 
@@ -24,7 +27,7 @@
           <ul class="nav nav-pills pull-right">
             <li role="presentation"><a href="index.aspx">Crear</a></li>
             <li role="presentation"><a href="Listar.aspx">Ver lista</a></li>
-            <li role="presentation"><a href="">GitHub</a></li>
+            <li role="presentation"><a href="#">GitHub</a></li>
              
           </ul>
              <h3 class="text-muted">Agenda UTB</h3><hr />
@@ -33,8 +36,6 @@
       </div>
        </div>
     
-
-
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

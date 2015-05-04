@@ -18,7 +18,7 @@ namespace AppAgendaUTBBoostrapXML.Web
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
-            Crear p = new Crear( );
+           
 
            
 
