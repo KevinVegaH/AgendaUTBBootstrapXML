@@ -7,89 +7,117 @@ namespace AppAgendaUTBBoostrapXML.Modelo
 {
     public class Personas
     {
-        #region propiedades
-
-        private int id;
-        public string nombre;
-        public string apellidos;
-        public string emailp;
-        private string emailw;
-        private int telefono;
-
-        
-
+        #region "Atributos"
+        private string id;
+        private string nombres;
+        private string apellidos;
+        private string emailP;
+        private string emailW;
+        private string telefonoP;
+        private string telefonoW;
         #endregion
 
-        #region propiedades
-        public int Id
+        #region "Propiedades"
+        public string Id
         {
             get { return id; }
             set { id = value; }
         }
-        public string Emailw
+        public string Nombres
         {
-            get { return emailw; }
-            set { emailw = value; }
+            get { return nombres; }
+            set { nombres = value; }
         }
-        public int Telefono
+        public string Apellidos
         {
-            get { return Telefono; }
-            set { Telefono = value; }
+            get { return apellidos; }
+            set { apellidos = value; }
+        }
+
+        public string EmailP
+        {
+            get { return emailP; }
+            set { emailP = value; }
+        }
+        public string EmailW
+        {
+            get { return emailW; }
+            set { emailW = value; }
+        }
+        public string TelefonoP
+        {
+            get { return telefonoP; }
+            set { telefonoP = value; }
+        }
+        public string TelefonoW
+        {
+            get { return telefonoW; }
+            set { telefonoW = value; }
         }
 
         #endregion
 
-        #region costructor
-        public Personas () {
-
-            this.id = 123;
-            this.emailw = "xxxxx@hotmail.com";
-            this.telefono = 1234;
-
-        
+        #region "Constructores"
+        public Personas()
+        {
+            this.id = "XXXXXX";
+            this.nombres = "Nombres";
+            this.apellidos = "Apellidos";
+            this.emailP = "eamilpersonal@dominio.com";
+            this.emailW = "eamilwork@dominio.com";
+            this.telefonoP = "3001234567";
+            this.telefonoW = "6535234";
         }
-        public Personas(int id,string email ,int telefono) {
 
+
+        public Personas(string id, string nombres, string apellidos, string emailP, string emailW, string telefonoP, string telefonoW)
+        {
             this.id = id;
-            this.emailw = email;
-            this.telefono = telefono;
-
+            this.nombres = nombres;
+            this.apellidos = apellidos;
+            this.emailP = emailP;
+            this.emailW = emailW;
+            this.telefonoP = telefonoP;
+            this.telefonoW = telefonoW;
         }
-#endregion
+        #endregion
 
-        #region "Methods Override"
+        #region "Métodos SobreEscritos"
         public override string ToString()
         {
-            return "\n________________________________________________ \n" +
-                "\n ID = " + id + "\n" +
-                "\n email = " + emailw + "\n" +
-                "\n Telefono = " + telefono + "\n" ;
-
+            return "\n_______________________________________" +
+                    "\nIdentificacion: " + this.id +
+                    "\nNombres: " + this.nombres +
+                    "\nApellidos: " + this.apellidos +
+                    "\nEmail P: " + this.emailP +
+                    "\nEmail W: " + this.emailW +
+                    "\nTelefono P: " + this.telefonoP +
+                    "\nTelefono W: " + this.telefonoW +
+                    "\n_______________________________________";
         }
-        public override bool Equals(object obj)
-        {
-
-            Personas c = (Personas)obj;
-            bool result = false;
-
-            if ((this.id == c.id) && (this.emailw == c.emailw) &&  (this.telefono == c.telefono))
-            {
-                result = true;
-            }
-
-            return result;
-        }
-
-
         public override int GetHashCode()
         {
             return this.ToString().GetHashCode();
         }
+        public override bool Equals(object obj)
+        {
+            Personas o = (Personas)obj;
+            bool result = false;
 
-    #endregion
-   
-    
-    
+            if ((this.id == o.id) &&
+                (this.nombres == o.nombres) &&
+                (this.apellidos == o.apellidos) &&
+                (this.emailP == o.emailP) &&
+                (this.emailW == o.emailW) &&
+                (this.telefonoP == o.telefonoP) &&
+                (this.telefonoW == o.telefonoW))
+
+                result = true;
+
+            return result;
+        }
+
+        #endregion
     
     }
 

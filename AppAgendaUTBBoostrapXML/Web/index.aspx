@@ -33,26 +33,26 @@
              <div class="control-group">
                 <label class="control-label" >Nombres</label>
                 <div class="controls">
-                     <asp:TextBox ID="txtNombres" runat="server" class="input-lg" required="" title="Por favor ingrese su nombre." ></asp:TextBox>
+                     <asp:TextBox ID="txtNombres" pattern="[A-Za-z- -]*" runat="server" class="input-lg" required="" title="Por favor ingrese su nombre." ></asp:TextBox>
                 </div>
              </div>
         
                 <div class="control-group">
                 <label class="control-label" >Apellidos</label>
                 <div class="controls">
-                     <asp:TextBox ID="txtApellidos" runat="server" class="input-lg" required="" tile="Por favor ingrese su apellido."></asp:TextBox>
+                     <asp:TextBox ID="txtApellidos" pattern="[A-Za-z- -]*" runat="server" class="input-lg" required="" tile="Por favor ingrese su apellido."></asp:TextBox>
                 </div>
              </div>
               <div class="control-group">
                 <label class="control-label" >Email Personal</label>
                 <div class="controls">
-                     <asp:TextBox  type="email" ID="EmailP" runat="server" class="input-lg" required="" title="Por favor coloque su email personal." ></asp:TextBox>
+                     <asp:TextBox  type="emailp" ID="EmailP" runat="server" class="input-lg" required="" title="Por favor coloque su email personal." ></asp:TextBox>
                 </div>
              </div>
              <div class="control-group">
                 <label class="control-label" >Email Trabajo</label>
                 <div class="controls">
-                     <asp:TextBox  type="email" ID="EmailW" runat="server" class="input-lg" required="" title="Por favor coloque su email de trabajo."></asp:TextBox>
+                     <asp:TextBox  type="emailw" ID="EmailW" runat="server" class="input-lg" required="" title="Por favor coloque su email de trabajo."></asp:TextBox>
                 </div>
              </div>
                 <div class="control-group">

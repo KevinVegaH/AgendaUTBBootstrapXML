@@ -26,7 +26,7 @@
             <br />
           <ul class="nav nav-pills pull-right">
             <li role="presentation"><a href="index.aspx">Crear</a></li>
-            <li role="presentation"><a href="Listar.aspx">Ver lista</a></li>
+            <li role="presentation"><a href="VerLista.aspx">Ver lista</a></li>
             <li role="presentation"><a href="#">GitHub</a></li>
              
           </ul>

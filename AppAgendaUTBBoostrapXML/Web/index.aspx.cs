@@ -18,8 +18,21 @@ namespace AppAgendaUTBBoostrapXML.Web
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
-           
 
+            Personas p = new Personas(
+                                       txtId.Text,
+                                       txtNombres.Text,
+                                       txtApellidos.Text,
+                                       EmailP.Text,
+                                       EmailW.Text,
+                                       TelefonoP.Text,
+                                       TelefonoW.Text
+                                      );
+
+            Crear data = new Crear();
+
+            
+            data.WriteXML(p);
            
 
            
